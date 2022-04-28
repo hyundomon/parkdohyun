@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: skyblue;
+            /* display: inline-block; 을 추가해주면 동그라미 생기게 해줌! */
+        }
+        h2::after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>24시간 언제나</h2>
+    <div></div>
+    <!-- div는 블럭이라소 크기설정이된다!!그래서 위에h2머기시가 먹힌다 
+    div이거 넣어줘서 동그라미 보임!! 안보이면 위에 주석 참고해서 해봐라-->
+</body>
+</html>
