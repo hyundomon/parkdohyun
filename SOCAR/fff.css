@@ -7,14 +7,13 @@
     --font-footer-dark: #646F7C;
 }
 
-.header {
+header {
     position: fixed;
     width: 100%;
     height: 60px;
-    /* float 로 하면은 밑에 세개는 작성안해두된다 대신 뒤에 몇개 수정해줘야한다*/
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
 }
 
 h1 figure {
@@ -23,6 +22,7 @@ h1 figure {
     margin-left: 40px;
     margin-top: 18px;
     float: left;
+    
 }
 
 .hidden {
@@ -117,14 +117,4 @@ h1 figure {
 
 #introduce figure {
     margin-top: 40px;
-    margin-bottom: 40px;
-    width: 800px;
-    height: 601px;
-    float: left;
-    border: 0;
-    overflow: auto;
-    max-width: 100%;
-    display: block;
 }
-
-
