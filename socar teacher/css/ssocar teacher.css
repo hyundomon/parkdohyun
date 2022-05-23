@@ -6,29 +6,26 @@
     --font-footer-light: #C5C8Ce;
     --font-footer-dark: #646F7C;
     --background-color-gray: #F7F8F9;
-    --footer-background-color:#374553;
+    --footer-bacground-color: #28323C;
 }
 
 @font-face {
     font-family: 'Happiness-Sans-Bold';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Bold.woff2') format('woff2');
-    font-weight: 700;
     font-style: normal;
 }
 
 html {
-    font-family:'Happiness-Sans-Bold';
+    font-family: 'Happiness-Sans-Bold';
 }
-/* thml이나body 로 위에 폰트페이스 복붙하고 위처럼 지정해줘야 적용된다. */
 
-.header {
+header {
     position: fixed;
     width: 100%;
     height: 60px;
-    /* float 로 하면은 밑에 세개는 작성안해두된다 대신 뒤에 몇개 수정해줘야한다*/
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
 }
 
 h1 figure {
@@ -37,6 +34,7 @@ h1 figure {
     margin-left: 40px;
     margin-top: 18px;
     float: left;
+    
 }
 
 .hidden {
@@ -76,7 +74,7 @@ h1 figure {
 #main-title {
     /* 브라우저 height값의 100%만큼 높이 지정 */
     height: 100vh;
-    background-image: url(../../img/socar/main_visual_fullscreen.jpg);
+    background-image: url(../img/main_visual_fullscreen.jpg);
     position: relative;
 }
 
@@ -131,45 +129,39 @@ h1 figure {
 
 #introduce figure {
     margin-top: 40px;
-    margin-bottom: 40px;
-    width: 800px;
-    height: 601px;
-    border: 0;
-    overflow: auto;
-    max-width: 100%;
-    display: block;
 }
 
 #now-start {
     background-color: var(--background-color-gray);
     height: 444px;
     position: relative;
+    overflow: hidden;
 }
 
 #now-start>p {
     font-size: 36px;
-    font-weight: 600px;
+    font-weight: 300;
     color: var(--font-gray);
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%-50%);
+    transform: translate(-50%,-50%);
 }
 
-.count-up{
-    color: var(--miain-color);
+.count-up {
+    color: var(--main-color);
 }
 
 #now-start .accent {
-    color: var(--miain-color);
+    color: var(--main-color);
 }
 
 #now-start::after {
     display: block;
     content: '';
     height: 100%;
-    width: 400px;
+    width: 50%;
     background-color: #0BB8FF;
     transform: skewX(-30deg);
     position: absolute;
@@ -177,13 +169,15 @@ h1 figure {
 }
 
 footer {
-    background-color: var(--footer-background-color);
+    background-color: var(--footer-bacground-color);
 }
 
 .footer-container {
-    width: 900px;
+    width: 980px;
     margin: 0 auto;
     padding-top: 48px;
+    padding-bottom : 96px
+
 }
 
 .sns-icons {
@@ -191,10 +185,9 @@ footer {
 }
 
 .sns-icons li {
-    float: left
+    float: left;
     margin-right: 12px;
-    /* 이거 왜이러지? 고치기!! */
-}    
+}
 
 .footer-nav {
     margin-top: 24px;
@@ -207,11 +200,19 @@ footer {
 }
 
 .footer-nav a {
-    color: var(--font-footer-light);
+    color: var(--font-footer-light)
 }
 
-/* article 피드 한장 */
+.footer-nav .accent {
+    color :#FFF;
+}
 
+.corp-area {
+    margin-top: 24px;
+    overflow: hidden;
+    color: var(--font-footer-dark);
+    font-size: 13px;
+}
 
 .corp-area>ul {
     float: left;
