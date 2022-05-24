@@ -1,0 +1,42 @@
+/* 웹 폰트찾기 눈누 or 구글 폰트 */
+
+@font-face {
+    font-family:  Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    src: url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+    font-style: normal;
+}
+
+html {
+    font-family: 'Pretendard';
+}
+
+header {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0.5%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    height: 71px;
+    justify-content: space-between;
+}
+
+.main-title {
+    background-image: url(../img/discode/메인위.png);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    padding: 0 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.main-title-heading {
+    font-size: 36px;
+    line-height: 44px;
+    color: #ffffff;
+    font-weight: 700;
+    margin: 0 0 20px;
+    padding: 35px 0 0 0;
+    text-align: center;
+}
