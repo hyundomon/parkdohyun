@@ -9,7 +9,9 @@
 html {
     font-family: 'Pretendard';
 }
-
+ * {
+     box-sizing: border-box;
+ }
 header {
     max-width: 1160px;
     margin: 0 auto;
@@ -29,14 +31,59 @@ header {
     padding: 0 20px;
     text-align: center;
     width: 100%;
+    margin-bottom: 40px;
 }
 
 .main-title-heading {
     font-size: 36px;
     line-height: 44px;
-    color: #ffffff;
+    color: white;
     font-weight: 700;
     margin: 0 0 20px;
     padding: 35px 0 0 0;
     text-align: center;
+}
+
+.introduce-title {
+    margin-top: 104px;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.introduce-contents {
+ font-size: 16px;
+ font-weight: 400;
+ margin-top: 20px;
+ margin-bottom: 75px;
+ text-align: center;
+}
+
+.class-category {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0;
+    list-style: none;
+}
+
+.category-boxes {
+    font-size: 22px;
+    font-weight: 400;
+    color: #5865F2;
+    margin-top: 116px;
+}
+
+.category-boxes-contents {
+    font-size: 14px;
+    font-weight: 400;
+    width: 200px;
+    margin: -10px auto 0;
+    color: #68727e;
+}
+
+.flex-item known-issues {
+    
 }
