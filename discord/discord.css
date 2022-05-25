@@ -44,7 +44,7 @@ header {
     text-align: center;
 }
 
-.introduce-title {
+.intro-title {
     margin-top: 104px;
     font-size: 26px;
     font-weight: 400;
@@ -54,7 +54,7 @@ header {
     line-height: 1.5;
 }
 
-.introduce-contents {
+.intro-contents {
  font-size: 16px;
  font-weight: 400;
  margin-top: 20px;
