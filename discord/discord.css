@@ -115,7 +115,7 @@ header {
     background-color: white;
 }
 
-.hr {
+.flex-item hr {
     height: 1px;
     border: none;
     background-color: #99aab5;
