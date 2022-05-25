@@ -84,6 +84,7 @@ header {
     font-weight: 400;
     color: #5865F2;
     margin-top: 116px;
+    line-height: 33px;
     text-align: center;
 }
 
@@ -94,5 +95,77 @@ header {
     margin: -10px auto 0;
     padding: 5px;
     color: #68727e;
+    line-height: 21px;
     text-align: center;
+}
+
+.pre {
+    font-family: monospace;
+    font-size: 1em;
+    display: block;
+    white-space: pre;
+}
+
+.class-category-wrap li {
+    background-repeat: no-repeat;
+    background-size: 106px;
+    background-position: center 14px;
+    width: 240px;
+    height: 260px;
+    background-color: white;
+}
+
+.hr {
+    height: 1px;
+    border: none;
+    background-color: #99aab5;
+    opacity: .5;
+    width: 50px;
+    margin: -6px auto 20px;
+}
+
+.known-issues {
+    background-image: url(../img/discode/확성기.svg);
+}
+
+.discord-interface {
+    background-image: url(../img/discode/사이트창.svg);
+}
+
+.account-settings {
+    background-image: url(../img/discode/톱니바퀴.svg);
+}
+
+.text-chat {
+    background-image: url(../img/discode/메신저.svg);
+}
+
+.server-setup {
+    background-image: url(../img/discode/조절기.svg);
+}
+
+.community-programs {
+    background-image: url(../img/discode/육각형.svg);
+}
+
+.store {
+    background-image: url(../img/discode/안내소.svg);
+}
+
+.billing {
+    background-image: url(../img/discode/메모\ 서류.svg);
+}
+
+.trust-safety {
+    background-image: url(../img/discode/방패.svg);
+}
+
+.faq {
+    background-image: url(../img/discode/돋보기.svg);
+}
+
+.more-help {
+    font-size: 24px;
+    text-align: center;
+    color: ;
 }
