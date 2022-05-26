@@ -106,7 +106,7 @@ header {
     white-space: pre;
 }
 
-.class-category-wrap1 li {
+.class-category-wrap li {
     background-repeat: no-repeat;
     background-size: 106px;
     background-position: center 14px;
@@ -167,7 +167,6 @@ header {
 .more-help {
     font-size: 24px;
     text-align: center;
-    color: ;
 }
 
 
@@ -177,4 +176,4 @@ header {
 
 .twitter {
     background-image: url(../img/discode/핸드폰.svg);
-}
+}s
