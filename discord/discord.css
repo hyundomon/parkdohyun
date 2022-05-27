@@ -168,6 +168,7 @@ header {
 .more-help {
     font-size: 22px;
     text-align: center;
+<<<<<<< HEAD
     font-weight: 400;
     line-height: 33px;
     margin-bottom: 18.3;
@@ -197,10 +198,18 @@ header {
     height: 260px;
     padding: 5px;
     margin: 10px;
+=======
+}
+
+
+.hclogo {
+    background-image: url(../img/discode//디스코드아이콘.svg);
+>>>>>>> 4c8b4e9fb0b9cdde80afb6dfb2dfa1d2283daf75
 }
 
 .twitter {
     background-image: url(../img/discode/핸드폰.svg);
+<<<<<<< HEAD
     background-repeat: no-repeat;
     background-size: 106px;
     background-position: center 14px;
@@ -210,3 +219,6 @@ header {
     padding: 5px;
     margin: 10px;
 }
+=======
+}s
+>>>>>>> 4c8b4e9fb0b9cdde80afb6dfb2dfa1d2283daf75
