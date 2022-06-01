@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>모임이 쉬워진다/밴드</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="band.css">
     <style>
         html {
             background-color: #f6f8fa;
@@ -20,20 +22,24 @@
     
     <header>
         <!-- 상단 메뉴들 넣어주기 -->
-        <div class="class">top menu</div>
-            <a href="#"></a>
-            <figure>
-                <object data="밴드 로그넣어주는데 이방법 말고 css에서 백그라운드로 넣어줄거임 임시로 자리만 잡은거다" type=""></object>
-            </figure>
+        <div class="header-inner">
+        <div class="band-logo"></div>
+            <a href="#" class="bandlogo"></a>
+        </div>
+
+        <div class="header-nav">
+                <a href="#" class="language">한국어</a>
+                <a href="#" class="join">회원가입</a>
+                <button>로그인</button>
+        </div>
+    </div>
     </header>
 
     <main>
+
         <section id="intro">
-            <div class="into-left">
-            <figure>
-                <object data="/img/band/bg_sloganImg.jpg" type=""></object>
-            </figure>
-            </div>
+            <div class="intro-left-img"></div>
+
             <h1 class="intro-right">모임이 쉬워진다!
                 <br>우리끼리 밴드
             </h1>
@@ -80,11 +86,12 @@
             </ul>
         </section>
 
-        <section id="category">
+        <section id="category-section">
             <h4>이런 밴드는 어때요</h4>
-            
-            <div class="category-left">
-                <ul class="bottom-left-category">
+            <span>모두보기</span>
+        
+            <div class="category-box">
+                <ul class="category">
 
                     <li class="uk">
                         <figure>
@@ -119,42 +126,38 @@
                         <p class="introduce">도서관가는여자,책읽기,필사,책읽는여자,매일책읽기10분... </p>
                         <p class="member">멤버147 리더 하루한</p>
                     </li>
+                    
+                    <li class="space">
+                        <h4>우주,천체관측,천체사진 밴드</h4>
+                        <p class="introduce">유뷰브에서 천체관측 관련 유튜브를 하고 있는 딥스카이 입...</p>
+                        <p class="member">멤버 1,193 리더 딥스카이(종이)/용인</p>    
+                        </p>
+                    </li>
+
+                    <li class="everyday"></li>
+                        <h4>매일 10분 영어공부 인증</h4>
+                        <p class="introduce">#공지1. 목표: 적어도 2일에 한 번은 10분 이상 영어 공부 하...</p>
+                        <p class="member">멤바 697 리더 Desert_Fox</p>
+                    </li>
+
+                    <li class="study"></li>
+                        <h4>하사전 영어 스터디</h4>
+                        <p class="introduce">뉴노멀시대에 소소하게, 부담 없이 그러나 꾸준히,영어를 만<div class=""></div>
+                        <p class="member">멤버 202. 리더 황용운</p>
+                    </li>
+
+                    <li class="home trainning"></li>
+                        <h4>매일 홈트하기</h4>
+                        <p class="introduce">홈트를 하면 너무 좋은데 혼자하니 게을러져서 의지가 점점...</p>
+                        <p class="member">멤버 126 리더 두리번두리번</p>
+                    </li>
+
+                    <li class="diet"></li>
+                        <h4>도전운동vs실패DIET 인증하기</h4>
+                        <p class="introduce">OK FITNESS CLUB 오피클 실천을 위한 동기부여"100... </p>
+                        <p class="member">멤버 64.리더 피운사</p>
+                    </li>
                 </ul>
-            </div>
-
-            <div class="category-right">
-                <ul class="bottom-right-category"></ul>
-
-                <li class="space">
-                    <h4>우주,천체관측,천체사진 밴드</h4>
-                    <p class="introduce">유뷰브에서 천체관측 관련 유튜브를 하고 있는 딥스카이 입...</p>
-                    <p class="member">멤버 1,193 리더 딥스카이(종이)/용인</p>    
-                    </p>
-                </li>
-
-               <li class="everyday"></li>
-                    <h4>매일 10분 영어공부 인증</h4>
-                    <p class="introduce">#공지1. 목표: 적어도 2일에 한 번은 10분 이상 영어 공부 하...</p>
-                    <p class="member">멤바 697 리더 Desert_Fox</p>
-                </li>
-
-                <li class="study"></li>
-                    <h4>하사전 영어 스터디</h4>
-                    <p class="introduce">뉴노멀시대에 소소하게, 부담 없이 그러나 꾸준히,영어를 만<div class=""></div>
-                    <p class="member">멤버 202. 리더 황용운</p>
-                </li>
-
-                <li class="home trainning"></li>
-                    <h4>매일 홈트하기</h4>
-                    <p class="introduce">홈트를 하면 너무 좋은데 혼자하니 게을러져서 의지가 점점...</p>
-                    <p class="member">멤버 126 리더 두리번두리번</p>
-                </li>
-
-                <li class="diet"></li>
-                    <h4>도전운동vs실패DIET 인증하기</h4>
-                    <p class="introduce">OK FITNESS CLUB 오피클 실천을 위한 동기부여"100... </p>
-                    <p class="member">멤버 64.리더 피운사</p>
-                </li>
             </div>
         </section>
         
