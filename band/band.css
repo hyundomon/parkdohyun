@@ -1,31 +1,231 @@
-.header-inner {
-    position: relative;
-    min-width: 1000px;
-    display: -webkit-box;
+:root{
+    --header-color:#666;
+    --font-color-grey:#444;
+    --font-color-black:#222;
+    --button-color-green:#21c531;
+    --font-color-white:#fafafa;
+    --background-color:#fff;
+    --background-color-gray:#eef0f3;
+}
+
+html{
+    font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Segoe UI Symbol","Android Emoji",EmojiSymbols;
+}
+
+header {
     display: flex;
+    justify-content: space-between;
+    /* 위에꺼 옆으로 간격을 두겠다라는 의미 */
+    align-items: center;  
+    /* 기준점을 두고 가운데 정렬? */
     height: 68px;
     background-color: #f6f8fa;
 }
 
+.band-logo {
+    background-image: url(../img/band/spr_intro.png);
+    width: 78px;
+    height: 31px;
+    background-size: 231px auto;
+    background-position: 0 -96px;
+}
+
 .header-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 17px;
+    position: absolute;
+    right: 30px;
+    top: 14px;
 }
 
-.header-nav>a {
-    color: var(--header-color);
-    margin: 5px;
+.header-nav li {
+    display: inline-block;
+    position: relative;
+    padding-right: 13px;
+    margin-top: 7px;
+    color: #222;
+    text-decoration: none;
+}
+
+.header-nav a {
+    color: #222;
+    text-decoration: none;
+    display: inline-block;
+    margin: 7px 0 0 27px;
+    vertical-align: top;
     font-size: 14px;
-    font-weight: 400px;
 }
 
-.intro-left-img {
-    background-image: url(../img/band/bg_sloganImg.jpg);
+.header-nav button {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fafafa;
+    display: inline-block;
+    height: 35px;
+    margin: 0 0 0 26px;
+    padding: 0 23px;
+    border-radius: 2px;
+    background-color: #21c531;
+    line-height: 35px;
+    border: none; 
+    /* border 검은테두리 생겨서 none로 바꿔줌! */
+}
+
+#intro {
     display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 76px;
+    background-color: #f6f8fa;
+}
+
+.intro-box {
+    padding-top: 76px;
+    background-color: #f6f8fa;
+}
+.intro-left-img {
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
     width: 540px;
     height: 695px;
     margin-right: 50px;
+    background: url(../img/band/bg_sloganImg.jpg) no-repeat;
     background-size: 540px auto;
+}
+
+.intro-right-box {
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+
+.intro-right {
+    margin-top: 122px;
+    font-size: 48px;
+    font-weight: 500;
+    color: #222;
+    letter-spacing: -1px;
+    line-height: 1.21;
+}
+
+.intro-right-box p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+    margin-top: 13px;
+}
+
+.login-box {
+    margin-top: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 340px;
+}
+
+.login-box a {
+    display: block;
+    width: 100%;
+    height: 54px;
+    border-radius: 2px;
+    background-color: #21c531;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 54px;
+    color: #fff;
+}
+
+.login-box a.join {
+    margin-top: 12px;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    color: #333;
+}
+
+.more-link {
+    font-size: 13px;
+    font-weight: 400;
+    color: #444;
+}
+
+.more-link a {
+    font-size: 13px;
+    font-weight: 700;
+    color: #2ecc71;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+.main-title {
+    background-color: #fff;
+}
+
+.main-title {
+    background-image: url(../img/band/bg_intro.jpg);
+    position: relative;
+    display: flex;
+    height: 540px;
+    background-size: cover;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+
+.main-title h2 {
+    font-size: 42px;
+    font-weight: 500;
+    text-shadow: 0 1px 1px rgb(0 0 0 / 11%);
+    color: #fff;
+    letter-spacing: -1px;
+}
+
+.main-title p {
+    width: 650px;
+    margin: 18px auto 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.63;
+}
+
+.main-category-wrapper {
+    padding: 60px 0;
+    text-align: center;
+    display: flex;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.main-category-wrapper li {
+    display: inline-block;
+    width: 300px;
+    height: 160px;
+    vertical-align: top;
+    text-align: left;
+    margin-left: 46px;
+}
+
+.main-category-wrapper img {
+    width: 300px;
+    height: 160px;
+}
+
+.main-category-wrapper text {
+    overflow-wrap: normal;
+    word-break: break-word;
+    margin-top: 16px;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #222;
+}
+
+.main-category-wrapper p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #444;
+    margin-top: 6px;
+    line-height: 1.6;
 }
