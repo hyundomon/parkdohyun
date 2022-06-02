@@ -80,6 +80,7 @@ header {
 .intro-box {
     padding-top: 76px;
     background-color: #f6f8fa;
+    display: flex;
 }
 .intro-left-img {
     -webkit-box-flex: 0;
@@ -96,6 +97,8 @@ header {
     flex: 0 1 auto;
     overflow: hidden;
     padding-bottom: 60px;
+    width: 354px;
+    width: 100%;
 }
 
 .intro-right {
@@ -112,6 +115,10 @@ header {
     font-weight: 400;
     color: #444;
     margin-top: 13px;
+}
+
+.more {
+    display: flex;
 }
 
 .login-box {
@@ -193,8 +200,9 @@ header {
     padding: 60px 0;
     text-align: center;
     display: flex;
-    margin-left: 130px;
-    margin-right: 130px;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
 }
 
 .main-category-wrapper li {
@@ -203,7 +211,6 @@ header {
     height: 160px;
     vertical-align: top;
     text-align: left;
-    margin-left: 46px;
 }
 
 .main-category-wrapper img {
@@ -228,4 +235,34 @@ h3 {
     color: #444;
     margin-top: 6px;
     line-height: 1.6;
+}
+
+.main-category-wrapper figure {
+    margin-bottom: 16px;
+}
+
+.main-category-wrapper text {
+    overflow-wrap: normal;
+    word-break: break-word;
+    margin-top: 16px;
+}
+#category-section {
+    background: #eef0f3;
+    margin-top: 46px;
+}
+
+.title-box {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+h4 {
+    font-size: 24px;
+    color: #222;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    margin-top: 46px;
 }
