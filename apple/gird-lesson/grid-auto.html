@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 20%);
+            /* auto-fill --> flex-wrap과 비슷한 느낌
+            20프로로 채우고 나머지 자동으로 채워라???!!
+            만약 컨텐츠가 5개 미만이라면 공간이 남는다!!
+            4칸만 채워짐 div를 4개만 입력했을때!그런데 난 5칸 빈자리까지 꽉 채우고 싶다 하묘는?!!
+            --> auto-fill로 하면 공간이 남고 (auto fit, minmax(20%, auto))로 하면 4칸 이 5칸자리까지 차지하여 사실상 25프로 비율로 4칸이 맹글어짐~!!*/
+            border: 1px solid red;
+        }
+
+        .item {
+            border: 1px solid black;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    
+    <!-- div.item{$}*20 -->
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+    <div class="item">10</div>
+    <div class="item">11</div>
+    <div class="item">12</div>
+    <div class="item">13</div>
+    <div class="item">14</div>
+    <div class="item">15</div>
+    <div class="item">16</div>
+    <div class="item">17</div>
+    <div class="item">18</div>
+    <div class="item">19</div>
+    <div class="item">20</div>
+    </div>
+
+</body>
+</html>
