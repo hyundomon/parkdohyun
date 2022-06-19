@@ -7,9 +7,20 @@
     <title>apple grid</title>
     <style>
         
-        .container {
+        .grid-wrapper {
             border: 1px solid red;
             display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(9, auto);
+
+            grid-template-areas: 
+            "a1 b1 c1 d1"
+            "a2 b2 c2 d2"
+            "a3 b3 c3 d3"
+            "a4 b4 c4 d4"
+            "a5 b5 c5 d5"
+            "a6 b6 c6 d6"
+            ;
         }
 
         .item {
@@ -17,31 +28,109 @@
             background-color: gray;
         }
 
-        .container {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas: 
-        "a1 b1 c1 d1"
-        "a2 b2 c2 d2"
-        "a3 b3 c3 d3"
-        "a4 b4 c4 d4"
-        "a5 b5 c5 d5"
-        "a6 b6 c6 d6"
-        ;
-      }
-
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="grid-wrapper">
 
-    <div class="item">1</div>
-    <div class="item">2</div>
-    <div class="item">3</div>
-    <div class="item">4</div>
-    <div class="item">5</div>
-    <div class="item">6</div>
-    <div class="item">7</div>
-    <div class="item">8</div>
+    <div class="item-ipad-pro">
+        <div class="item-ipad-pro-img">
+            <a href="#"><figure class="ipad-pro-img"></figure></a>
+            <figure class="color"></figure>
+        </div>
+        
+        <div class="item-text-box">
+            <h2>iPad Pro</h2>
+            <p>궁극의 iPad란<br>이런 것.</p>
+            <span class="price">₩999,000부터</span>
+            <button>구입하기</button>
+            <a href="#">더 알아보기</a>
+        </div>
+        <!-- !!!ㅁ밑에 마감디브 주의!! -->
+    </div>  
+    <!-- ***위에 마감하는 div는 그리드-랩퍼꺼라서 맨 밑으로 내려줘야한다!!!작업 다 하고!!!*** -->
+    <div class="item-ipad-air">
+        <div class="item-ipad-air-img">
+            <a href="#"><figure class="ipad-air-img"></figure></a>
+            <figure class="color"></figure>
+        </div>
+        
+        <div class="item-text-box">
+            <p>New</p>
+            <h2>iPad Air</h2>
+            <p>강력하다.다채롭다.<br>경이롭다.</p>
+            <span class="price">₩779,000부터</span>
+            <button>구입하기</button>
+            <a href="#">더 알아보기</a>
+        </div>
+
+        <div class="item-ipad">
+            <div class="item-ipad-img">
+                <a href="#"><figure class="ipad-img"></figure></a>
+                <figure class="color"></figure>
+            </div>
+            
+            <div class="item-text-box">
+                <h2>iPad</h2>
+                <p>만족스러운 성능.<br>기분 좋은 가격.</p>
+                <span class="price">₩449,000부터</span>
+                <button>구입하기</button>
+                <a href="#">더 알아보기</a>
+            </div>
+
+        <div class="item-ipad-air">
+            <div class="item-ipad-air-img">
+                <a href="#"><figure class="ipad-air-img"></figure></a>
+                <figure class="color"></figure>
+            </div>
+            
+            <div class="item-text-box">
+                <p>New</p>
+                <h2>iPad Air</h2>
+                <p>강력하다.다채롭다.<br>경이롭다.</p>
+                <span class="price">₩779,000부터</span>
+                <button>구입하기</button>
+                <a href="#">더 알아보기</a>
+        </div>
+
+        <div class="item-ipad-mini">
+            <div class="item-ipad-mini-img">
+                <a href="#"><figure class="ipad-mini-img"></figure></a>
+                <figure class="color"></figure>
+            </div>
+            
+            <div class="item-text-box">
+                <h2>iPad mini</h2>
+                <p>메가급 성능.<br>크기만 미니.</p>
+                <span class="price">₩649,000부터</span>
+                <button>구입하기</button>
+                <a href="#">더 알아보기</a>
+        </div>
+
+    <div class="size-ipad-pro">
+        <h4>12.9 및 11</h4>
+        <p>32.7cm Liquid Retina
+            <br>XDR 디스플레이1
+            <br>27.9cm Liquid Retina 디스플레이1
+        </p>
+    </div>
+
+    <div class="size-ipad-air">
+        <h4>10.9</h4>
+        <p>27.5cm Liquid Retina 디스플레이1</p>
+    </div>
+
+    <div class="size-ipad">
+        <h4>10.2</h4>
+        <p>25.9cm Retina 디스플레이1</p>
+    </div>
+
+    <div class="size-ipad-mini">
+        <h4>8.3</h4>
+        <p>21.0cm Liquid Retina 디스플레이1</p>
+    </div>
+
+    
     <div class="item">9</div>
     <div class="item">10</div>
     <div class="item">11</div>
