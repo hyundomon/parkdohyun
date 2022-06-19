@@ -5,13 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>apple grid</title>
+    <link rel="stylesheet" href="apple.css">
+
     <style>
         
         .grid-wrapper {
             border: 1px solid red;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(9, auto);
+            grid-template-rows: repeat(6, auto);
+            row-gap: 38px;
+            column-gap: 34px;
+            margin-top: 68px;
+            margin-bottom: 73px;
+            max-width: 940px;
+            margin-left: auto;
+            margin-right: auto;
 
             grid-template-areas: 
             "a1 b1 c1 d1"
@@ -20,6 +29,9 @@
             "a4 b4 c4 d4"
             "a5 b5 c5 d5"
             "a6 b6 c6 d6"
+            "a7 b7 c7 d7"
+            "a8 b8 c8 d8"
+            "a9 b9 c9 d9"
             ;
         }
 
@@ -47,8 +59,9 @@
             <button>구입하기</button>
             <a href="#">더 알아보기</a>
         </div>
+    </div>    
         <!-- !!!ㅁ밑에 마감디브 주의!! -->
-    </div>  
+
     <!-- ***위에 마감하는 div는 그리드-랩퍼꺼라서 맨 밑으로 내려줘야한다!!!작업 다 하고!!!*** -->
     <div class="item-ipad-air">
         <div class="item-ipad-air-img">
@@ -64,49 +77,37 @@
             <button>구입하기</button>
             <a href="#">더 알아보기</a>
         </div>
+    </div> 
 
-        <div class="item-ipad">
-            <div class="item-ipad-img">
-                <a href="#"><figure class="ipad-img"></figure></a>
-                <figure class="color"></figure>
-            </div>
-            
-            <div class="item-text-box">
-                <h2>iPad</h2>
-                <p>만족스러운 성능.<br>기분 좋은 가격.</p>
-                <span class="price">₩449,000부터</span>
-                <button>구입하기</button>
-                <a href="#">더 알아보기</a>
-            </div>
-
-        <div class="item-ipad-air">
-            <div class="item-ipad-air-img">
-                <a href="#"><figure class="ipad-air-img"></figure></a>
-                <figure class="color"></figure>
-            </div>
-            
-            <div class="item-text-box">
-                <p>New</p>
-                <h2>iPad Air</h2>
-                <p>강력하다.다채롭다.<br>경이롭다.</p>
-                <span class="price">₩779,000부터</span>
-                <button>구입하기</button>
-                <a href="#">더 알아보기</a>
+    <div class="item-ipad">
+        <div class="item-ipad-img">
+            <a href="#"><figure class="ipad-img"></figure></a>
+            <figure class="color"></figure>
         </div>
-
-        <div class="item-ipad-mini">
-            <div class="item-ipad-mini-img">
-                <a href="#"><figure class="ipad-mini-img"></figure></a>
-                <figure class="color"></figure>
-            </div>
             
-            <div class="item-text-box">
-                <h2>iPad mini</h2>
-                <p>메가급 성능.<br>크기만 미니.</p>
-                <span class="price">₩649,000부터</span>
-                <button>구입하기</button>
-                <a href="#">더 알아보기</a>
+        <div class="item-text-box">
+            <h2>iPad</h2>
+            <p>만족스러운 성능.<br>기분 좋은 가격.</p>
+            <span class="price">₩449,000부터</span>
+            <button>구입하기</button>
+            <a href="#">더 알아보기</a>
         </div>
+    </div>
+
+    <div class="item-ipad-mini">
+        <div class="item-ipad-mini-img">
+            <a href="#"><figure class="ipad-mini-img"></figure></a>
+            <figure class="color"></figure>
+        </div>
+            
+        <div class="item-text-box">
+            <h2>iPad mini</h2>
+            <p>메가급 성능.<br>크기만 미니.</p>
+            <span class="price">₩649,000부터</span>
+            <button>구입하기</button>
+            <a href="#">더 알아보기</a>
+        </div>
+    </div>
 
 <!-- size -->
     <div class="size-ipad-pro">
@@ -278,7 +279,8 @@
             <br>호환
         </p>
     </div>
-       <div class="keyboard-ipad-air">
+
+    <div class="keyboard-ipad-air">
         <figure class="keyboard-img"></figure>
         <p>Magic Keyboard 및
             <br>Smart Keyboard Filio와
@@ -286,7 +288,7 @@
         </p>
     </div>
 
-       <div class="keyboard-ipad">
+    <div class="keyboard-ipad">
         <figure class="keyboard-img"></figure>
         <p>Smart Keyboard와 호환</p>
     </div>
@@ -295,8 +297,8 @@
         <figure class="keyboard-img"></figure>
         <p>Bluetooth 키보드와 호환</p>
     </div>
-
-</div>
+    
+</div>  
 
 </body>
 </html>
