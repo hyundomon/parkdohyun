@@ -1,0 +1,81 @@
+:root{
+    --main-background-white: #FFFFFF;
+    --main-font-gray: #4f545c;
+    --link-font-blue: rgba(88, 101, 242, 1);
+    --footer-background-dark-gray:#23272A;
+    --footer-font-white: #FFFFFF;
+    --footer-button-green: #3BA55C;
+}
+
+html{
+    font-family: Whitney,'Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+}
+
+header {
+    background-color: #FFFFFF;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 5%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    height: 71px;
+    justify-content: space-between;
+}
+
+.discord.logo {
+    max-height: 37px;
+}
+
+.nav-wrapper {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.menu-list {
+    display: flex;
+    position: relative;
+    padding-right: 30px;
+    font-size: 14px;
+    align-items: center;
+}
+
+.menu-list a {
+    padding: 0 10px;
+    width: auto;
+}
+
+.menu-list-language {
+    background: none;
+    border: 0;
+    color: rgba(88, 101, 242, 1);
+    padding: 0;
+    margin: 20px;
+}
+
+.searchbox figure {
+    background-image: url(../img/discode/메인위.png);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    padding: 0 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.text-and-searchbox {
+
+}
+
+.text-and-searchbox h1 {
+    font-size: 36px;
+    line-height: 44px;
+    color: black;
+    font-weight: 700;
+    margin: 0 0 20px;
+    padding: 35px 0 0 0;
+    text-align: center;
+    font-family: Whitney,'Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+}
