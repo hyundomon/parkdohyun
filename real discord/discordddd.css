@@ -3,6 +3,7 @@
     --main-font-gray: #4f545c;;
     --link-font-blue: rgba(88, 101, 242, 1);
     --hr-gray: #99aab5;
+    --end-box-background-gray: #f2f2f2;
     --footer-background-dark-gray:#23272A;
     --footer-font-white: #FFFFFF;
     --footer-button-green: #3BA55C;
@@ -69,15 +70,11 @@ main {
     background-size: cover;
     height: 300px;
     width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .text-and-searchbox {
     position: relative;
-    top: 25%;
+    top: 50%;
     /* 원래 사이트의 css는 50%인데 내꺼는 25%로 해야 같아짐 이렇게 가능한가?? */
     transform: translateY(-50%);
     max-width: 610px;
@@ -157,7 +154,7 @@ input{
     width: 100%;
 }
 
-.menu-whole-box li{
+#main-middle-boxes li{
 background-repeat: no-repeat;
     background-size: 106px;
     background-position: center 14px;
@@ -239,10 +236,208 @@ hr{
 }
 
 #main-end p {
-    font-size: 22px;
-    text-align: center;
-    line-height: 33px;
-    margin-top: 60px;
-    margin-left: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    width: 200px;
+    margin: -10px auto 0;
+    font-family: Whitney,'Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
     color: var(--main-font-gray);
+}
+
+#main-end ul{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.main-end-boxes li {
+    background-repeat: no-repeat;
+    background-size: 106px;
+    background-position: center 14px;
+    background-color: #f2f2f2;
+    width: 260px;
+    height: 260px;
+}
+
+.main-end-boxes h3{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--link-font-blue);
+    font-family: Whitney,'Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+}
+
+#main-end .help-title{
+    font-size: 22px;
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+    padding-bottom: 15px;
+    line-height: 1.5;
+    color: var(--main-font-gray);
+}
+
+.main-end-boxes li {
+    background-repeat: no-repeat;
+    background-size: 106px;
+    background-position: center 14px;
+    width: 240px;
+    height: 260px;
+    margin: 10px;
+    background-color: #f2f2f2;
+    box-shadow: 0px 9px 30px rgb(200 200 200 / 30%);
+}
+
+.main-end-boxes .game-developer {
+    background-image: url(../img/discode/디스코드아이콘.svg);
+}
+
+.main-end-boxes .twitter {
+    background-image: url(../img/discode/핸드폰.svg);
+}
+
+/* 여기부터 footer */
+
+footer {
+    background-color: var(--footer-background-dark-gray);
+}
+
+.footer-frame {
+    width: 100%;
+    max-width: 1100px;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+.more-and-apps {
+    background-color: #23272A;
+    background-size: 235px 185px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    margin-top: 70px;
+    width: 100%;
+}
+
+footer button{
+    background-color: #3BA55C;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: 600;
+    overflow: hidden;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    margin: 50px 0;
+    width: 250px;
+    height: 42px;
+}
+
+.apps{
+    background-image: url(../img/discode/핸드폰들.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 814px 145px;
+    width: 814px;
+    height: 145px;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+.apps a {
+    position: absolute;
+    top: 61px;
+    opacity: .5;
+}
+
+.apps .three-apps {
+    left: 87px;
+}
+
+.apps .android {
+    left: 378px;
+}
+
+.apps .apple {
+    left: 472px;
+}
+
+.apps .window {
+    left: 622px;
+}
+
+.apps .x {
+    left: 694px;
+}
+
+
+.end-nav {
+    border-top: 1px solid rgba(219,221,225,.1);
+    align-items: center;
+    display: flex;
+    padding: 0 30px 50px;
+    background-color: var(--footer-background-dark-gray);
+}
+
+.nav-left-logo {
+    display: flex;
+    flex-direction: row;
+    height: 75px;
+    margin-top: -20px;
+}
+
+.nav-left-logo a{
+    max-width: inherit !important;
+    margin-top: 0;
+}
+
+.spacer {
+    flex-basis: 250px;
+    height: 100%;
+}
+
+.nav-right-links {
+    display: flex;
+    height: 100%;
+    margin: 30px 0 0 0;
+    width: 100%;
+}
+
+.nav-right-links ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.nav-right-links li{
+    padding: 8px 0;
+    text-align: left;
+    line-height: 1;
+}
+
+.nav-right-links li>a{
+    color: white;
+    opacity: .3;
+    font-size: 15px;
+}
+/* 밑에 두개 적용법 알기 글자 색이 안 진해진다ㅜㅜ*/
+.nav-right-links li .hyphen {
+    color: #fff;
+    opacity: .3;
+}
+
+.nav-right-links li .accent {
+    color: #3BA55C;
+    opacity: none;
 }
