@@ -28,6 +28,7 @@ header {
     height: 31px;
     background-size: 231px auto;
     background-position: 0 -96px;
+    margin: 17px 0 0 17px;
 }
 
 .header-nav {
