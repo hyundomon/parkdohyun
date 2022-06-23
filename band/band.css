@@ -155,6 +155,10 @@ header {
     margin-top: 36px;
 }
 
+.more-link+.more-link {
+    margin-top: 20px;
+}
+
 .more-link a {
     font-size: 13px;
     font-weight: 700;
@@ -162,6 +166,8 @@ header {
     margin-left: 10px;
     text-decoration: underline;
     display: inline;
+    /* 디스플레이 인라인 이거 뭔지 다시 공부하기!!!
+    인라인은 글자취급 블럭은 도형같이 틀 취급 인라인박스는 글자플러스도형!! */
 }
 
 .main-title {
@@ -202,6 +208,7 @@ header {
     justify-content: space-between;
     width: 1000px;
     margin: 0 auto;
+    padding-bottom: 100px;
 }
 
 .main-category-wrapper li {
@@ -248,6 +255,16 @@ h3 {
 #category-section {
     background: #eef0f3;
     margin-top: 46px;
+    box-sizing: border-box;
+}
+
+.category-box {
+    position: relative;
+}
+
+.category-frame {
+    width: 1000px;
+    margin: 0 auto;
 }
 
 .title-box {
@@ -264,4 +281,29 @@ h4 {
     -webkit-box-flex: 0;
     flex: 0 0 auto;
     margin-top: 46px;
+}
+
+.category{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 25px 0 24px;
+}
+
+.category li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 101px;
+    margin-bottom: 25px;
+}
+
+.img figure{
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 93px;
+    height: 93px;
 }
