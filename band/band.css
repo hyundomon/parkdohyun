@@ -79,7 +79,6 @@ header {
 }
 
 .intro-box {
-    padding-top: 76px;
     background-color: #f6f8fa;
     display: flex;
 }
@@ -153,6 +152,7 @@ header {
     font-size: 13px;
     font-weight: 400;
     color: #444;
+    margin-top: 36px;
 }
 
 .more-link a {
@@ -161,14 +161,12 @@ header {
     color: #2ecc71;
     margin-left: 10px;
     text-decoration: underline;
-}
-
-.main-title {
-    background-color: #fff;
+    display: inline;
 }
 
 .main-title {
     background-image: url(../img/band/bg_intro.jpg);
+    background-color: #fff;
     position: relative;
     display: flex;
     height: 540px;
