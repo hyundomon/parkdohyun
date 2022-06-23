@@ -93,12 +93,18 @@ main {
 }
 
 .searchbox {
-    display: flex;
     width: 100%;
     max-width: 800px;
     /* 위에 반응형하려고 600에서 800으로 바꿔줬다 오늘!그런데 앙댄다 */
     align-items: center;
-    background-color: white;
+    position: relative;
+}
+
+.searchbox figure {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 19px;
 }
 
 input{
@@ -155,7 +161,7 @@ input{
 }
 
 #main-middle-boxes li{
-background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: 106px;
     background-position: center 14px;
     width: 240px;
@@ -163,6 +169,8 @@ background-repeat: no-repeat;
     margin: 10px;
     background-color: white;
     box-shadow: 0px 9px 30px rgb(200 200 200 / 30%);
+    padding-top: 146px;
+    box-sizing: border-box;
 }
 
 .menu-whole-box h3 {
@@ -181,7 +189,7 @@ hr{
     background-color: #99aab5;
     opacity: .5;
     width: 50px;
-    margin: -6px auto 20px;
+    margin: 15px auto 20px;
 }
 
 .menu-whole-box p{
@@ -242,6 +250,9 @@ hr{
     margin: -10px auto 0;
     font-family: Whitney,'Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
     color: var(--main-font-gray);
+    padding: 5px;
+    line-height: 21px;
+    text-align: center;
 }
 
 #main-end ul{
@@ -291,6 +302,8 @@ hr{
     margin: 10px;
     background-color: #f2f2f2;
     box-shadow: 0px 9px 30px rgb(200 200 200 / 30%);
+    padding-top: 146px;
+    box-sizing: border-box;
 }
 
 .main-end-boxes .game-developer {
@@ -323,9 +336,10 @@ footer {
     padding: 0;
     margin-top: 70px;
     width: 100%;
+    text-align: center;
 }
 
-footer button{
+footer .more {
     background-color: #3BA55C;
     border-radius: 25px;
     text-align: center;
@@ -334,9 +348,11 @@ footer button{
     font-size: 16px;
     cursor: pointer;
     color: #fff;
-    margin: 50px 0;
+    margin: 50px auto;
     width: 250px;
     height: 42px;
+    display: block;
+    line-height: 42px;
 }
 
 .apps{
