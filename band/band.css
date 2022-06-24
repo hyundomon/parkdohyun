@@ -374,6 +374,7 @@ h5 {
     background-color: #fff;
     box-sizing: border-box;
     /* 이거 기능 잘 알기 뺴도되는지 알기 그냥 있어서 입략함! */
+    display: flex;
 }
 
 .band-icon {
@@ -442,7 +443,7 @@ footer {
     width: 1000px;
     margin: 0 auto;
     position: relative;
-    top: 50px
+    top: 30px
 }
 
 .footer-menu {
