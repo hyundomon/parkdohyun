@@ -377,6 +377,10 @@ h5 {
     display: flex;
 }
 
+.icons-and-text-box{
+    display: flex;
+}
+
 .band-icon {
     background-image: url(../img/band/spr_intro.png);
     width: 70px;
@@ -384,9 +388,11 @@ h5 {
     background-size: 231px auto;
     background-position: -161px 0;
     overflow: hidden;
+    margin-left: 50px;
+    margin-right: 20px;
 }
 
-h5 {
+h6 {
     font-size: 23px;
     color: #222;
     padding-bottom: 5px;
