@@ -375,6 +375,7 @@ h5 {
     box-sizing: border-box;
     /* 이거 기능 잘 알기 뺴도되는지 알기 그냥 있어서 입략함! */
     display: flex;
+    justify-content: center;
 }
 
 .icons-and-text-box{
