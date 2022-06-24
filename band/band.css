@@ -470,3 +470,10 @@ footer {
 ::after{
     box-sizing: border-box;
 }
+
+.menu-section p{
+    font-size: 13px;
+    font-weight: 500;
+    color: #b3b3b3;
+    margin-top: 5px;
+}
