@@ -474,9 +474,15 @@ footer {
     box-sizing: border-box;
 }
 
+.footer-menu a:last-child::after {
+    display: none;
+}
+
 .menu-section p{
     font-size: 13px;
     font-weight: 500;
     color: #b3b3b3;
     margin-top: 5px;
+    line-height: 30px;
+    /* 라인하이트로 줘서 여백 만들어줘도되는지 확인하기 */
 }
