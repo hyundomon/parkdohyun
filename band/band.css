@@ -286,6 +286,15 @@ h4 {
     margin-top: 46px;
 }
 
+.title-box span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #222;
+    line-height: 20px;
+    text-align: left;
+    margin-top: 46px;
+}
+
 .category{
     display: flex;
     -webkit-box-pack: justify;
