@@ -256,6 +256,8 @@ h3 {
     background: #eef0f3;
     margin-top: 46px;
     box-sizing: border-box;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .category-box {
@@ -273,6 +275,7 @@ h3 {
     align-items: center;
     -webkit-box-pack: justify;
     justify-content: space-between;
+    padding-bottom: 10px;
 }
 
 h4 {
@@ -297,7 +300,7 @@ h4 {
     justify-content: center;
     width: 500px;
     height: 93px;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
 }
 
 li .recommend {
@@ -310,6 +313,10 @@ li .recommend {
     vertical-align: top;
     width: 93px;
     height: 93px;
+    flex-shrink: 0;
+    /* 큰틀 플렉스에 레코멘드에 위스하이스백프로 줬더니 밀고들어와서
+    옆에 사진을 줄여가며 자리를 먹었다(수축시킴)
+    그래서 수축을 안시킬것이다!!라는 의미 */
 }
 
 .recommend {
