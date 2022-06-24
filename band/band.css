@@ -431,3 +431,42 @@ h5 {
     width: 1px!important;
     clip: rect(1px,1px,1px,1px)!important;
 }
+
+footer {
+    min-width: 1000px;
+    min-height: 120px;
+    background-color: #2a3038;
+}
+
+.menu-section {
+    width: 1000px;
+    margin: 0 auto;
+}
+.footer-menu {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.footer-menu a{
+        font-size: 13px;
+        font-weight: 400;
+        color: #777;
+        display: inline-block;
+}
+
+.footer-menu a::after {
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    margin: 8px 5px 0 10px;
+    border-radius: 50%;
+    background-color: #d8d8d8;
+    vertical-align: top;
+    opacity: .46;
+    content: '';
+}
+
+::after{
+    box-sizing: border-box;
+}
