@@ -372,4 +372,62 @@ h5 {
 #band-ad {
     padding: 30px 0 33px;
     background-color: #fff;
+    box-sizing: border-box;
+    /* 이거 기능 잘 알기 뺴도되는지 알기 그냥 있어서 입략함! */
+}
+
+.band-icon {
+    background-image: url(../img/band/spr_intro.png);
+    width: 70px;
+    height: 70px;
+    background-size: 231px auto;
+    background-position: -161px 0;
+    overflow: hidden;
+}
+
+h5 {
+    font-size: 23px;
+    color: #222;
+    padding-bottom: 5px;
+}
+.more-ad {
+    overflow: hidden;
+    padding-top: 9px;
+    font-size: 23px;
+    color: #222;
+}
+
+.more-ad p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+}
+
+.app-download {
+    display: flex;
+}
+
+.google {
+    background-image: url(../img/band/spr_intro.png);
+    width: 160px;
+    height: 47px;
+    margin-right: 10px;
+    background-size: 231px auto;
+    background-position: 0 0;
+}
+
+.apple {
+    background: url(../img/band/spr_intro.png);
+	width: 160px;
+	height: 47px;
+    background-size: 231px auto;
+    background-position: 0 -48px;
+}
+
+.hidden {
+    overflow: hidden!important;
+    position: absolute!important;
+    height: 1px!important;
+    width: 1px!important;
+    clip: rect(1px,1px,1px,1px)!important;
 }
