@@ -1,5 +1,5 @@
 :root {
-    --header-background:rgba(0,0,0,0.8);
+    --header-background: rgb(29, 29, 31);
     --background-color:#f5f5f7;
     --button-color:#06c;
     --new-color:#f56300;
@@ -26,11 +26,38 @@ header ul{
     margin: 0 auto;
 }
 
+.hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px,1px,1px,1px);
+    overflow: hidden;
+}
+
 .apple-icon {
     background-image: url(../apple/apple_img/globalnav_apple_image__b5er5ngrzxqq_large.svg);
     background-size: 14px 44px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     width: 14px;
     height: 44px;
+}
+
+.store-icon {
+    background-image: url(../apple/apple_img/globalnav_links_store_image__c7jy08initqq_large.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-origin: content-box;
+    width: 2.5em;
+    height: 44px;
+}
+
+.mac-icon {
+    background-image: url(../apple/apple_img/globalnav_links_mac_image__dazlko3t9a6a_large.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 1.91667em;
+    max-width: 39.1px;
 }
