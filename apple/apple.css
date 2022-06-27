@@ -55,7 +55,7 @@ header ul{
 }
 
 .store-icon {
-    background-image: url(../apple/apple_img/globalnav_links_store_image__c7jy08initqq_large.svg);
+    background-image: url(apple_img/globalnav_links_store_image__c7jy08initqq_large.svg);
     background-repeat: no-repeat;
     background-position: center center;
     width: 30px;
@@ -63,21 +63,21 @@ header ul{
 }
 
 .mac-icon {
-    background-image: url(../apple/apple_img/globalnav_links_mac_image__dazlko3t9a6a_large.svg);
+    background-image: url(apple_img/globalnav_links_mac_image__dazlko3t9a6a_large.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-origin: content-box;
     background-size: cover;
     width: 23px;
-    max-width: 39.1px;
+    height: 39.1px;
 }
 
 .ipad-icon {
     background-repeat: no-repeat;
-    background-image: url(../apple/apple_img/globalnav_links_ipad_image__fw9qyj9lloi2_large.svg);
+    background-image: url(apple_img/globalnav_links_ipad_image__fw9qyj9lloi2_large.svg);
     background-position: center center;
     background-origin: content-box;
     background-size: cover;
     width: 24px;
-    max-width: 44px;
+    height: 44px;
 }
