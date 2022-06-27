@@ -1,0 +1,337 @@
+:root {
+    --header-background: rgba(0,0,0,0.8);
+    --background-color:#f5f5f7;
+    --button-color:#06c;
+    --new-color:#f56300;
+    --font-color:#1d1d1f;
+}
+
+html{
+    font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+header{
+    background-color: var(--header-background);
+}
+
+header ul{
+    display: flex;
+    margin: 0 -8px;
+    overflow: hidden;
+    max-width: 980px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px,1px,1px,1px);
+    overflow: hidden;
+}
+
+.apple-icon {
+    background-image: url(./apple_img/globalnav_apple_image__b5er5ngrzxqq_large.svg);
+    background-size: 14px 44px;
+    /* 좀 더 안정적이게 하려고 백그라운드 사이즈 넣어주고,
+    밑에 꼭 넣어야하는 위스랑 하이트를 넣어줌!!위스하이트 꼮!백그라운드는 보험삼아!! */
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 14px;
+    height: 44px;
+    padding: 0 8px;
+}
+
+.store-icon {
+    background-image: url(./apple_img/globalnav_links_store_image__c7jy08initqq_large.svg);
+    background-size: 30px 44px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 30px;
+    height: 44px;
+    padding: 0 8px;
+}
+
+.mac-icon {
+    background-image: url(./apple_img/globalnav_links_mac_image__dazlko3t9a6a_large.svg);
+    background-size: 23px 44px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 23px;
+    height: 44px;
+    padding: 0 8px;
+}
+
+.ipad-icon {
+    background-image: url(./apple_img/globalnav_links_ipad_image__fw9qyj9lloi2_large.svg);
+    background-size: 24px 44px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 24px;
+    height: 44px;
+    padding: 0 8px;
+}
+
+.iphone-icon {
+    background-image: url(./apple_img/globalnav_links_iphone_image__ko7x4isga4ia_large.svg);
+    background-size: 38px 44px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 38px;
+    height: 44px;
+    padding: 0 8px;
+}
+
+.watch-icon {
+    background-image: url(./apple_img/globalnav_links_watch_image__gkoblojrlsqe_large.svg);
+    background-size: 35px 44px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 35px;
+    height: 44px;
+    padding: 0 8px;
+}
+
+.airpods-icon1 {
+    background-image: url(./apple_img/globalnav_links_airpods_image__f969s84ivmaa_large.svg);
+    background-size: 43px 44px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 43px;
+    height: 44px;
+    padding: 0 8px;
+}
+
+.tv-home-icon {
+    background-image: url(./apple_img/globalnav_links_tvhome_image__zb2ewyxbi6ae_large.svg);
+    background-size: 42px 44px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 42px;
+    height: 44px;
+    padding: 0 8px;
+}
+
+.only-apple-icon {
+    background-image: url(./apple_img/globalnav_links_onlyonapple_image__c4t8k97tougm_large.svg);
+    background-size: 80px 44px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 80px;
+    height: 44px;
+    padding: 0 8px;
+}
+
+.accessories-icon {
+    background-image: url(./apple_img/globalnav_links_accessories_image__edj0wqmfwxyu_large.svg);
+    background-size: 40px 44px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 40px;
+    height: 44px;
+    padding: 0 8px;
+}
+
+.customer-service-icon {
+    background-image: url(./apple_img/globalnav_links_support_image__bw9kctll7u3m_large.svg);
+    background-size: 39px 44px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 39px;
+    height: 44px;
+    padding: 0 8px;
+}
+
+.find-icon {
+    background-image: url(./apple_img/globalnav_search_image__cbllq1gkias2_large.svg);
+    background-size: 15px 44px;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: cover;
+    width: 15px;
+    height: 44px;
+    padding: 0 8px;
+}
+
+.shopping-bag-icon {
+    background-image: url(./apple_img/globalnav_bag_image__yzte50i47ciu_large.svg);
+    background-size: 13px 44px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 13px;
+    height: 44px;
+    padding: 0 8px;
+}
+
+.items-category {
+    background-color: #000;
+    margin-bottom: 7px;
+    margin: 0 auto;
+}
+
+.items-category-wrapper {
+    padding: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    height: 100px;
+    z-index: 9987;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+
+.items-category-wrapper ul {
+    padding-bottom: 49px;
+    margin: 0 34px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    list-style: none;
+    padding-bottom: 50px;
+    display: flex;
+}
+
+.items-category-wrapper li {
+    display: flex;
+    padding: 0 15px;
+    position: relative;
+    flex-shrink: 0;
+    /* 플랙스 쉬링크 플랙스 기능 방지!왜냐면 플랙스 기능 들어가면 줄어드는거 방지하기위해서 */
+}
+
+.ipad-pro-icon {
+    background-image: url(./apple_img/ipadpro_dark__175htbn6m76u_large.svg);
+    background-size: 41px 54px;
+    background-repeat: no-repeat;
+    width: 41px;
+    height: 54px;
+}
+
+.ipad-air-icon {
+    background-image: url(./apple_img/ipadair_dark__gi1t1iqta1yu_large.svg);
+    background-size: 30px 54px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 54px;
+}
+
+.ipad-icon2 {
+    background-image: url(./apple_img/ipad_dark__fe8ocv9hktim_large.svg);
+    background-size: 30px 54px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 54px;
+}
+
+.ipad-mimi-icon {
+    background-image: url(./apple_img/ipadmini_dark__cdfcygd422uu_large.svg);
+    background-size: 30px 54px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 54px;
+}
+
+.compare-icon {
+    background-image: url(./apple_img/ipad_compare_dark__cxllw9w1tuy6_large.svg);
+    background-size: 45x 54px;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 54px;
+}
+
+.apple-pencil-icon {
+    background-image: url(./apple_img/apple_pencil_dark__c42qcvi9e802_large.svg);
+    background-size: 3px 54px;
+    background-repeat: no-repeat;
+    width: 3px;
+    height: 54px;
+}
+
+.keyboard-icon {
+    background-image: url(./apple_img/keyboard_dark__dtedyad0xnqu_large.svg);
+    background-size: 63px 54px;
+    background-repeat: no-repeat;
+    width: 63px;
+    height: 54px;
+}
+
+.airpods-icon2 {
+    background-image: url(./apple_img/airpods_dark__ccoezo86z37m_large.svg);
+    background-size: 27px 54px;
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 54px;
+}
+
+.acc-icon {
+    background-image: url(./apple_img/ipad_acc_dark__bo0a4ftei9au_large.svg);
+    background-size: 31px 54px;
+    background-repeat: no-repeat;
+    width: 31px;
+    height: 54px;
+}
+
+.ipados-icon {
+    background-image: url(./apple_img/ipados_dark__emr7k8pfle4i_large.svg);
+    background-size: 32px 54px;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 54px;
+}
+
+.shopping-ipad-icon {
+    background-image: url(./apple_img/shop_ipad_dark__ekfl60g78g4m_large.svg);
+    background-size: 66px 54px;
+    background-repeat: no-repeat;
+    width: 66px;
+    height: 54px;
+}
+
+.items-category-wrapper ul li a {
+    display: block;
+    padding: 0;
+    margin-top: 3px;
+    position: relative;
+    z-index: 1;
+}
+
+.items-category figure {
+    display: block;
+    margin: 0 auto 7px;
+    height: 54px;
+}
+
+.items-category span {
+    color: #f5f5f7;
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+    transition: 0.3s;
+}
