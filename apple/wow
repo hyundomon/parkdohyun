@@ -1,13 +1,13 @@
 :root {
     --header-background: rgba(0,0,0,0.8);
     --background-color:#f5f5f7;
-    --button-color:#06c;
+    --button-color:#0071e3;
     --new-color:#f56300;
     --font-color:#1d1d1f;
 }
 
 html{
-    font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: "SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 header{
@@ -335,3 +335,106 @@ header ul{
     font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
     transition: 0.3s;
 }
+
+.items-category .new{
+    font-size: 10px;
+    line-height: 1.2; 
+    font-weight: 400;
+    display: block;
+    color: var(--new-color);
+}
+
+
+#intro {
+    padding-top: 68px;
+    padding-bottom: 66px;
+    background-color: #000;
+}
+
+.ipad-air-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 262px;
+    height: 245px;
+    z-index: 2;
+}
+
+.ipad-air-text-container .top-new {
+    color: var(--new-color);
+    font-size: 12px;
+    line-height: 2.08337;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+}
+
+.white-font-title {
+    color: white;
+}
+
+.white-font {
+    color: white;
+}
+
+.white-main-price {
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 600;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 19px;
+    text-align: center;
+}
+
+.main-price {
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 19px;
+    text-align: center;
+}
+
+.buy {
+    margin-top: 12px;
+    margin-bottom: 13px;
+    background-color: var(--button-color);
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.17648;
+    font-weight: 400;
+    min-width: 28px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 980px;
+    border: none;
+    /* 구입하기 가운데로 옮기기 어케하지? */
+}
+
+.more {
+    color: var(--button-color);
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: normal;
+    text-align: center;
+    text-align: center;
+}
+
+#main-intro .ipad-pro {
+    width: 245px;
+    height: 231px;
+}
+
