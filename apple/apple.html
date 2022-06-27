@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
+        <div class="header-navbar">
             <ul class="header-nav">
                 <li class="hamberger"><a href="#"> 
                     <!-- 백그라운드이미지 넣을때 figure사용하면 구조적으로 좋은데, a태그를 넣어야 쨌든 링크로 넘어가서 a태그를 써줌 -->
@@ -37,7 +37,7 @@
 
                 
                 <li class="ipad"><a href="#">
-                    <figure class="ipad-icon"></figure>
+                    <figure class="ipad-icon1"></figure>
                     <span class="hidden">ipad</span>
                 </a></li>
 
@@ -55,7 +55,8 @@
 
                 
                 <li class="airpods"><a href="#">
-                    <figure class="airpods-icon"></figure> 
+                    <figure class="airpods-icon1"></figure> 
+                    <!-- 밑에 두번째 다른 에어팟아이콘 있음 주의! 숫자 덧붙임 -->
                     <span class="hidden">airpods</span>
                 </a></li>
 
@@ -100,61 +101,100 @@
 
     <nav class="items-category">
         <div class="items-category-wrapper">
-            <ul class="items">
-                <li class="left-extend-icon"><a href="#">
-                    <span class="right-extend-text">왼쪽 확장 화살표</span>
+            <ul>
+                <li>
+                    <a href="#">
+                    <figure class="left-extend-icon"></figure>
+                    <span class="left-extend-text">왼쪽 화살표</span>
                     <!-- <button class="left-extend-textt">왼쪽 확장 화살표</button> -->
-                </a></li>
+                    </a>
+                </li>
                 
-                <li class="ipad-pro-icon"><a href="#">
-                    <span class="ipad-pro-text">iPad Pro</span>
-                </a></li>
+                <li>
+                    <a href="#">
+                    <figure class="ipad-pro-icon"></figure>
+                    <span>iPad Pro</span>
+                    </a>
+                </li>
 
-                <li class="ipad-air-icon"><a href="#">
-                    <span class="ipad-air-text">iPad Air</span>
+                <li>
+                    <a href="#">
+                    <figure class="ipad-air-icon"></figure>
+                    <span>iPad Air</span>
                     <span class="new">NEW</span>
-                </a></li>
+                    </a>
+                </li>
 
-                <li class="ipad-icon"><a href="#">
-                    <span class="ipad-text">iPad</span>
-                </a></li>
+                <li>   
+                    <a href="#">
+                    <figure class="ipad-icon2"></figure>
+                    <span>iPad</span>
+                    </a>
+                </li>
 
-                <li class="ipad-mini-icon"><a href="#">
-                    <span class="ipadmini-text">iPad mini</span>
-                </a></li>
+                <li>
+                    <a href="#">
+                    <figure class="ipad-mimi-icon"></figure>
+                    <span>iPad mini</span>
+                    </a>
+                </li>
 
-                <li class="compare-icon"><a href="#">
-                    <span class="compare-text">비교하기</span>
-                </a></li>
+                <li>
+                    <a href="#">
+                    <figure class="compare-icon"></figure>
+                    <span>비교하기</span>
+                    </a>
+                </li>
 
-                <li class="Apple-pencil-icon"><a href="#">
-                    <span class="Apple-pencil-text">Apple pencil</span>
-                </a></li>
+                <li>
+                    <a href="#">
+                    <figure class="apple-pencil-icon"></figure>
+                    <span>Apple pencil</span>
+                    </a>
+                </li>
 
-                <li class="keyboard-icon"><a href="#">
-                    <span class="keyboard-text">키보드</span>
-                </a></li>
+                <li>
+                    <a href="#">
+                    <figure class="keyboard-icon"></figure>
+                    <span>키보드</span>
+                    </a>
+                </li>
 
-                <li class="Airpods-icon"><a href="#">
-                    <span class="Airpods-text">Airpods</span>
-                </a></li>
+                <li>    
+                    <a href="#">
+                    <figure class="airpods-icon2"></figure>
+                    <span>airpods</span>
+                    </a>
+                </li>
 
-                <li class="accessories-icon"><a href="#">
-                    <span class="accessories-text">액세사리</span>
-                </a></li>
+                <li>    
+                    <a href="#">
+                    <figure class="acc-icon"></figure>
+                    <span>액세사리</span>
+                    </a>
+                </li>
 
-                <li class="ipados-icon"><a href="#">
-                    <span class="ipados-text">iPadOS</span>
-                </a></li>
+                <li>
+                    <a href="#">
+                    <figure class="ipados-icon"></figure>
+                    <span>iPadOS</span>
+                    </a>
+                </li>
 
-                <li class="shopping-ipad-icon"><a href="#">
-                    <span class="shopping-ipad-text">iPad쇼핑하기</span>
-                </a></li>
+                <li>
+                    <a href="#">
+                    <figure class="shopping-ipad-icon"></figure>
+                    <span>iPad쇼핑하기</span>
+                    </a>
+                </li>
 
-                <li class="right-extend-icon"><a href="#">
-                    <span class="right-extend-text">오른쪽 확장 화살표</span>
+                <li>
+                    <a href="#">
+                    <figure class="right-extend-icon"></figure>
+                    <span>오른쪽 화살표</span>
                     <!-- <button class="right-extend-textt">오른쪽 확장 화살표</button> -->
-                </a></li>
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -165,12 +205,19 @@
             <a href="#" class="ipad-air-background-pic"></a>
             <!-- 위 a태그에 css에 사진 넣어주기 -->
             <div class="ipad-air-text-container">
-                <p>New</p>
-                <h1>iPad</h1><figure class="air-text-pic"></figure>
-                <h2>가뿐하게.색다르게.<br>강력하게.</h2>
-                <p class="main-price">₩779,000부터</p>
+                <span class="top-new">New</span>
+                <h1 class="white-font-title">
+                    iPad
+                </h1>
+                    <span class="text-hidden">Air</span>
+                    <figure class="air-text-pic"></figure>
+
+                <h2 class="white-font">
+                    가뿐하게.색다르게.<br>강력하게.
+                </h2>
+                <p class="white-main-price">₩779,000부터</p>
                 <button class="buy">구입하기</button>
-                <a href="#">더 알아보기</a>
+                <a href="#" class="more">더 알아보기</a>
                 <!-- <span class="button-icon">화살표 넣어주기!!???</span> -->
                 <!-- figure를 추가해서 백그라운드이미지 표시해줘야하나??? -->
             </div>
@@ -180,11 +227,13 @@
             <a href="#" class="ipad-pro-background-pic"></a>
             <!-- 위 a태그에 css에 백그라운드이미지 넣어주기 이걸 디브 안에 넣느냐 마느냐 알아보기!! -->
             <div class="ipad-pro">
-                <h1>iPad Pro</h1>
+                <h1 class="black-font-title">
+                    iPad Pro
+                </h1>
                 <h2>궁극의 iPad란 이런 것.</h2>
                 <p class="main-price">₩999,000부터</p>
                 <button class="buy">구입하기</button>
-                <a href="#">더 알아보기</a>
+                <a href="#" class="more">더 알아보기</a>
                 <!-- <span class="button-icon">화살표 넣어주기!!???</span> -->
             </div>
 
@@ -195,7 +244,7 @@
                 <h2>만족스러운 성능. <br>기분 좋은 가격.</h2>
                 <p class="main-price">₩449,000부터</p>
                 <button class="buy">구입하기</button>
-                <a href="#">더 알아보기</a>
+                <a href="#" class="more">더 알아보기</a>
                 <!-- <span class="button-icon">화살표 넣어주기!!???</span> -->
             </div>
 
@@ -206,7 +255,7 @@
                 <h2>메가급 성능. <br>크기만 미니.</h2>
                 <p class="main-price">₩649,000부터</p>
                 <button class="buy">구입하기</button>
-                <a href="#">더 알아보기</a>
+                <a href="#" class="more">더 알아보기</a>
                 <!-- <span class="button-icon">화살표 넣어주기!!???</span> -->
             </div>
         </section>
