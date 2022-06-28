@@ -18,7 +18,7 @@ header ul{
     display: flex;
     margin: 0 -8px;
     overflow: hidden;
-    max-width: 980px;
+    max-width: 1000px;
     height: 44px;
     display: flex;
     justify-content: space-between;
@@ -31,6 +31,9 @@ header ul{
     height: 1px;
     clip: rect(1px,1px,1px,1px);
     overflow: hidden;
+}
+.hamberger {
+    display: none;
 }
 
 .apple-icon {
@@ -67,7 +70,7 @@ header ul{
     padding: 0 8px;
 }
 
-.ipad-icon {
+.ipad-icon1 {
     background-image: url(./apple_img/globalnav_links_ipad_image__fw9qyj9lloi2_large.svg);
     background-size: 24px 44px;
     background-repeat: no-repeat;
@@ -214,6 +217,7 @@ header ul{
     list-style: none;
     padding-bottom: 50px;
     display: flex;
+    justify-content: center;
 }
 
 .items-category-wrapper li {
