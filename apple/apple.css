@@ -362,6 +362,7 @@ header ul{
     width: 262px;
     height: 245px;
     z-index: 2;
+    align-items: center;
 }
 
 .ipad-air-text-container .top-new {
@@ -425,6 +426,7 @@ h2 {
     padding-bottom: 8px;
     border-radius: 980px;
     border: none;
+    width: 91px;
     /* 구입하기 가운데로 옮기기 어케하지? */
 }
 
@@ -440,5 +442,26 @@ h2 {
 #main-intro .ipad-pro {
     width: 245px;
     height: 231px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* 위에 세개도 다른 밑에 애들한테도 적용해주기 */
+
+#main-intro .ipad{
+    height: 262px;
+    width: 326.664px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+#main-intro .ipad-mini {
+    height: 262px;
+    /* margin-left: 23px;
+    margin-top: -84px; */
+    width: 222px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
