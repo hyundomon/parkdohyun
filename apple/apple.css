@@ -355,13 +355,28 @@ header ul{
     background-color: #000;
 }
 
+.ipad-air-wrapper {
+    margin: 0 51px;
+    flex-basis: 75%;
+    max-width: 75%;
+}
+
+.ipad-air-back-pic {
+    background-image: url(./apple_img/ipad_air__d794tkovmk02_large.jpg);
+    background-size: 680px 695px;
+    background-repeat: no-repeat;
+    width: 680px;
+    height: 695px;
+    position: relative;
+    left: 50%;
+}
+
 .ipad-air-text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 262px;
     height: 245px;
-    z-index: 2;
     align-items: center;
 }
 
