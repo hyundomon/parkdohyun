@@ -412,21 +412,12 @@ header ul{
     text-align: center;
 }
 
+
 .ipad-pro-wrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
-}
-
-.ipad-pro-background {
-
-
-}
-
-.ipad-pro-back-pic {
-
-
 }
 
 .white-font-title {
