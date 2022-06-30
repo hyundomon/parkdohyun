@@ -394,6 +394,39 @@ header ul{
     text-align: center;
 }
 
+.air-text-pic {
+    background-image: url(./apple_img/air_script__coyet2g7gkia_large.png);
+    background-repeat: no-repeat;
+    background-size: 88px 46px;
+    width: 88px;
+    height: 46px;
+    display: inline-block;
+    margin-left: -10px;
+    /* 원본은 -7인데 내눈엔 이게 똑같아서 이렇게 줬다! */
+    margin-bottom: -4px;
+}
+
+#main-intro {
+
+}
+
+.ipad-pro-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.ipad-pro-background {
+
+
+}
+
+.ipad-pro-back-pic {
+
+
+}
+
 .white-font-title {
     color: white;
 }
