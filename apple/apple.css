@@ -406,17 +406,29 @@ header ul{
     margin-bottom: -4px;
 }
 
-.ipad-pro-text-container {
-    flex-direction: column;
-    text-align: center;
+#main-intro-ipad-pro {
+    padding-top: 80px;
+    padding-bottom: 43px;
 }
-
 
 .ipad-pro-wrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 692px;
+}
+/* ㅇㅣ거 뺼뺼거거빼빼고 ㅊㅔ크하기위에꺼! */
+
+.ipad-pro-text-container {
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    flex-basis: 67%;
+    max-width: 67%;
+    justify-content: center;
 }
 
 .ipad-text-container {
@@ -427,6 +439,20 @@ header ul{
 .ipad-mini-text-container {
     flex-direction: column;
     text-align: center;
+}
+
+.ipad-pro-background {
+    flex-basis: 33%;
+    max-width: 33%;
+}
+
+.ipad-pro-back-pic {
+    background-image: url(./apple_img/ipad_pro_hero__bh3eq6sqfjw2_large.jpg);
+    background-size: 1335px 598px;
+    width: 1335px;
+    height: 598px;
+    background-repeat: no-repeat;
+    margin-left: 16%;
 }
 
 .white-font-title {
@@ -465,8 +491,8 @@ h2 {
 }
 
 .buy {
-    margin-top: 12px;
-    margin-bottom: 13px;
+    /* 밑에 마진 조합해서 구입하기 가운데로 만들었다! */
+    margin: 12px auto 13px;
     background-color: var(--button-color);
     color: white;
     cursor: pointer;
