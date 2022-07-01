@@ -407,7 +407,6 @@ header ul{
 }
 
 .ipad-pro-text-container {
-    display: flex;
     flex-direction: column;
     text-align: center;
 }
@@ -418,6 +417,16 @@ header ul{
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
+}
+
+.ipad-text-container {
+    flex-direction: column;
+    text-align: center;
+}
+
+.ipad-mini-text-container {
+    flex-direction: column;
+    text-align: center;
 }
 
 .white-font-title {
